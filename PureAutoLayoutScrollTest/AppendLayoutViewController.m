@@ -28,6 +28,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -38,8 +39,15 @@
     [self.containerView alignTop:@"0" leading:@"0" bottom:@"0" trailing:@"0" toView:self.view];
     
     UIView *viewBox = [[UIView alloc] init];
+    
+    // translatesAutoresizingMaskIntoConstraints is a transitionary attribute to help developers move from traditional auto resizing masks to
+    // auto layout. They are set at runtime when "Use Autolayout" is checked in a xib file.
+    // They tend to interfere with programmatic auto layout
+    
+    // for new views translatesAutoresizingMaskIntoConstraints == YES so turn this off
     viewBox.translatesAutoresizingMaskIntoConstraints = NO;
     
+    // just in case, turn these off too
     self.box0.translatesAutoresizingMaskIntoConstraints = NO;
     self.box1.translatesAutoresizingMaskIntoConstraints = NO;
     self.box2.translatesAutoresizingMaskIntoConstraints = NO;

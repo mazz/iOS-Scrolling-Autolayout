@@ -28,8 +28,8 @@
 		ADAC684A18A6E7EE009B9C91 /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAC684718A6E7EE009B9C91 /* UIView+FLKAutoLayoutPredicate.m */; };
 		ADAC684D18A6F6BF009B9C91 /* MyReallyBigImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAC684C18A6F6BF009B9C91 /* MyReallyBigImage.jpg */; };
 		ADAC684F18A6FCBD009B9C91 /* Boxes.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAC684E18A6FCBD009B9C91 /* Boxes.xib */; };
-		ADAC685318A839F0009B9C91 /* AppendLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAC685118A839F0009B9C91 /* AppendLayoutViewController.m */; };
 		ADAC685418A839F0009B9C91 /* AppendLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAC685218A839F0009B9C91 /* AppendLayoutViewController.xib */; };
+		ADD109A518AA8700007A22A2 /* StackedLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +76,8 @@
 		ADAC685018A839F0009B9C91 /* AppendLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppendLayoutViewController.h; sourceTree = "<group>"; };
 		ADAC685118A839F0009B9C91 /* AppendLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppendLayoutViewController.m; sourceTree = "<group>"; };
 		ADAC685218A839F0009B9C91 /* AppendLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppendLayoutViewController.xib; sourceTree = "<group>"; };
+		ADD109A318AA8700007A22A2 /* StackedLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedLayoutViewController.h; sourceTree = "<group>"; };
+		ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedLayoutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,8 @@
 		ADAC680D18A6E758009B9C91 /* PureAutoLayoutScrollTest */ = {
 			isa = PBXGroup;
 			children = (
+				ADD109A318AA8700007A22A2 /* StackedLayoutViewController.h */,
+				ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */,
 				ADAC685018A839F0009B9C91 /* AppendLayoutViewController.h */,
 				ADAC685118A839F0009B9C91 /* AppendLayoutViewController.m */,
 				ADAC685218A839F0009B9C91 /* AppendLayoutViewController.xib */,
@@ -301,8 +305,8 @@
 				ADAC684918A6E7EE009B9C91 /* FLKAutoLayoutPredicateList.m in Sources */,
 				ADAC684A18A6E7EE009B9C91 /* UIView+FLKAutoLayoutPredicate.m in Sources */,
 				ADAC682118A6E758009B9C91 /* ViewController.m in Sources */,
+				ADD109A518AA8700007A22A2 /* StackedLayoutViewController.m in Sources */,
 				ADAC681818A6E758009B9C91 /* AppDelegate.m in Sources */,
-				ADAC685318A839F0009B9C91 /* AppendLayoutViewController.m in Sources */,
 				ADAC684818A6E7EE009B9C91 /* UIView+FLKAutoLayout.m in Sources */,
 				ADAC681418A6E758009B9C91 /* main.m in Sources */,
 				ADAC684118A6E7C4009B9C91 /* Util.m in Sources */,
@@ -524,6 +528,7 @@
 				ADAC683B18A6E758009B9C91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADAC683C18A6E758009B9C91 /* Build configuration list for PBXNativeTarget "PureAutoLayoutScrollTestTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +537,7 @@
 				ADAC683E18A6E758009B9C91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

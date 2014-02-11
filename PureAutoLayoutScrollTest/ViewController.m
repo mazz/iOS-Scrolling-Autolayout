@@ -87,7 +87,13 @@
 - (void)placeBoxesInScrollView
 {
     UIView *scrollBox = [[UIView alloc] init];
+    
+    // translatesAutoresizingMaskIntoConstraints is a transitionary attribute to help developers move from traditional auto resizing masks to
+    // auto layout. They are set at runtime when "Use Autolayout" is checked in a xib file.
+    // They tend to interfere with programmatic auto layout
     scrollBox.translatesAutoresizingMaskIntoConstraints = NO;
+
+    // for new views translatesAutoresizingMaskIntoConstraints == YES so turn this off
     self.box0.translatesAutoresizingMaskIntoConstraints = NO;
     self.box1.translatesAutoresizingMaskIntoConstraints = NO;
     self.box2.translatesAutoresizingMaskIntoConstraints = NO;
@@ -98,29 +104,19 @@
     [scrollBox alignLeading:@"0" trailing:@"0" toView:self.scrollView];
     [UIView equalWidthForViews:@[self.scrollView, scrollBox]];
     
-//    [scrollBox alignTrailingEdgeWithView:self.containerView predicate:@"0"];
-    
-    //    [viewBox alignTop:@"10" leading:@"20" bottom:@"-30" trailing:@"-20" toView:self.containerView];
-    
     NSArray *boxes = @[self.box0, self.box1, self.box2];
 
     [scrollBox addSubview:self.box0];
     [scrollBox addSubview:self.box1];
     [scrollBox addSubview:self.box2];
 
-
     [boxes[0] constrainHeight:@">=263"];
     [boxes[0] alignLeading:@"0" trailing:@"0" toView:scrollBox];
-    //    [boxes[0] constrainWidthToView:self.containerView predicate:@"0"]; NG
     [UIView alignTopEdgesOfViews:@[boxes[0], scrollBox]];
-    //    [UIView alignBottomEdgesOfViews:@[boxes[2], viewBox]]; NG
     [UIView equalWidthForViews:boxes];
     [UIView equalHeightForViews:boxes];
-    //    [boxes[0] alignCenterXWithView:viewBox predicate:nil];
     [UIView alignLeadingAndTrailingEdgesOfViews:boxes];
-    //    [UIView alignTopAndBottomEdgesOfViews:boxes]; NG
     [UIView spaceOutViewsVertically:boxes predicate:@"0"];
-    //    [UIView distributeCenterYOfViews:boxes inView:viewBox]; NG
     
     [UIView alignBottomEdgesOfViews:@[scrollBox, boxes[2]]];
     [UIView colorViewsRandomly:scrollBox];
