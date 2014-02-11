@@ -88,36 +88,6 @@
     [UIView logViewRect:self.view level:0];
 }
 
-- (void)placeImageInScrollView
-{
-    UIImageView *imageView = [[UIImageView alloc] init];
-    
-    // Add an image to the image view.
-    [imageView setImage:[UIImage imageNamed:@"MyReallyBigImage.jpg"]];
-    
-    // Add the scroll view to our view.
-    //    [self.view addSubview:self.scrollView];
-    
-    // Add the image view to the scroll view.
-    [self.scrollView addSubview:imageView];
-    
-    // Set the translatesAutoresizingMaskIntoConstraints to NO so that the views autoresizing mask is not translated into auto layout constraints.
-    imageView.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    //    UIScrollView *scrollView = self.scrollView;
-    //    NSDictionary *viewsDictionary = NSDictionaryOfVariableBindings(scrollView, imageView);
-    //    [self.scrollView alignLeading:@"0" trailing:@"0" toView:self.containerView];
-    //    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[scrollView]|" options:0 metrics:0 views:viewsDictionary]];
-    
-    //    [self.scrollView alignTop:@"65" bottom:@"-44" toView:self.containerView];
-    //    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[scrollView]|" options:0 metrics: 0 views:viewsDictionary]];
-    
-    [imageView alignLeading:@"0" trailing:@"0" toView:self.scrollView];
-    //    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|" options:0 metrics: 0 views:viewsDictionary]];
-    [imageView alignTop:@"0" bottom:@"0" toView:self.scrollView];
-    //    [self.scrollView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[imageView]|" options:0 metrics: 0 views:viewsDictionary]];
-}
-
 - (void)placeBoxesInScrollView
 {
     UIView *scrollBox = [[UIView alloc] init];

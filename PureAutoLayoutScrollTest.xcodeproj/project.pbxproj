@@ -28,6 +28,7 @@
 		ADAC684D18A6F6BF009B9C91 /* MyReallyBigImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAC684C18A6F6BF009B9C91 /* MyReallyBigImage.jpg */; };
 		ADD109A518AA8700007A22A2 /* StackedLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */; };
 		ADD109A818AAA9D8007A22A2 /* ScrollingLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */; };
+		ADD109AB18AAB39F007A22A2 /* ScrollingGraphicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109AA18AAB39F007A22A2 /* ScrollingGraphicViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedLayoutViewController.m; sourceTree = "<group>"; };
 		ADD109A618AAA9D8007A22A2 /* ScrollingLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingLayoutViewController.h; sourceTree = "<group>"; };
 		ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingLayoutViewController.m; sourceTree = "<group>"; };
+		ADD109A918AAB39F007A22A2 /* ScrollingGraphicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingGraphicViewController.h; sourceTree = "<group>"; };
+		ADD109AA18AAB39F007A22A2 /* ScrollingGraphicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingGraphicViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 				ADAC681C18A6E758009B9C91 /* Main_iPad.storyboard */,
 				ADD109A618AAA9D8007A22A2 /* ScrollingLayoutViewController.h */,
 				ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */,
+				ADD109A918AAB39F007A22A2 /* ScrollingGraphicViewController.h */,
+				ADD109AA18AAB39F007A22A2 /* ScrollingGraphicViewController.m */,
 				ADAC683F18A6E7C4009B9C91 /* Util.h */,
 				ADAC684018A6E7C4009B9C91 /* Util.m */,
 				ADAC684B18A6E7F5009B9C91 /* FLKAutoLayout */,
@@ -290,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD109AB18AAB39F007A22A2 /* ScrollingGraphicViewController.m in Sources */,
 				ADAC684918A6E7EE009B9C91 /* FLKAutoLayoutPredicateList.m in Sources */,
 				ADAC684A18A6E7EE009B9C91 /* UIView+FLKAutoLayoutPredicate.m in Sources */,
 				ADD109A518AA8700007A22A2 /* StackedLayoutViewController.m in Sources */,
