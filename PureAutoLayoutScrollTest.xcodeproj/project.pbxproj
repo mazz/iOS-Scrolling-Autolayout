@@ -15,7 +15,6 @@
 		ADAC681818A6E758009B9C91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAC681718A6E758009B9C91 /* AppDelegate.m */; };
 		ADAC681B18A6E758009B9C91 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC681918A6E758009B9C91 /* Main_iPhone.storyboard */; };
 		ADAC681E18A6E758009B9C91 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADAC681C18A6E758009B9C91 /* Main_iPad.storyboard */; };
-		ADAC682118A6E758009B9C91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAC682018A6E758009B9C91 /* ViewController.m */; };
 		ADAC682318A6E758009B9C91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAC682218A6E758009B9C91 /* Images.xcassets */; };
 		ADAC682A18A6E758009B9C91 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAC682918A6E758009B9C91 /* XCTest.framework */; };
 		ADAC682B18A6E758009B9C91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAC680718A6E758009B9C91 /* Foundation.framework */; };
@@ -54,8 +53,6 @@
 		ADAC681718A6E758009B9C91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		ADAC681A18A6E758009B9C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		ADAC681D18A6E758009B9C91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		ADAC681F18A6E758009B9C91 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ADAC682018A6E758009B9C91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		ADAC682218A6E758009B9C91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ADAC682818A6E758009B9C91 /* PureAutoLayoutScrollTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PureAutoLayoutScrollTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAC682918A6E758009B9C91 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -142,8 +139,6 @@
 				ADAC681C18A6E758009B9C91 /* Main_iPad.storyboard */,
 				ADD109A618AAA9D8007A22A2 /* ScrollingLayoutViewController.h */,
 				ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */,
-				ADAC681F18A6E758009B9C91 /* ViewController.h */,
-				ADAC682018A6E758009B9C91 /* ViewController.m */,
 				ADAC683F18A6E7C4009B9C91 /* Util.h */,
 				ADAC684018A6E7C4009B9C91 /* Util.m */,
 				ADAC684B18A6E7F5009B9C91 /* FLKAutoLayout */,
@@ -297,7 +292,6 @@
 			files = (
 				ADAC684918A6E7EE009B9C91 /* FLKAutoLayoutPredicateList.m in Sources */,
 				ADAC684A18A6E7EE009B9C91 /* UIView+FLKAutoLayoutPredicate.m in Sources */,
-				ADAC682118A6E758009B9C91 /* ViewController.m in Sources */,
 				ADD109A518AA8700007A22A2 /* StackedLayoutViewController.m in Sources */,
 				ADAC681818A6E758009B9C91 /* AppDelegate.m in Sources */,
 				ADAC684818A6E7EE009B9C91 /* UIView+FLKAutoLayout.m in Sources */,
