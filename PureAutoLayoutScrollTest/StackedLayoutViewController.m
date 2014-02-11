@@ -21,7 +21,6 @@
 
 - (void)loadView
 {
-    
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0., 0., [[UIScreen mainScreen] applicationFrame].size.width, [[UIScreen mainScreen] applicationFrame].size.height)];
     
     CGRect boxRect = CGRectMake(0., 0., 320., 263.);
@@ -108,12 +107,6 @@
     [UIView logViewRect:self.view level:0];
 
     [UIView colorViewsRandomly:self.view];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)viewDidLayoutSubviews

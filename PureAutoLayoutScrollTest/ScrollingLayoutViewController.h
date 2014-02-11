@@ -1,8 +1,8 @@
 //
-//  ViewController.h
+//  ScrollingLayoutViewController.h
 //  PureAutoLayoutScrollTest
 //
-//  Created by Michael Hanna on 2/8/2014.
+//  Created by Michael Hanna on 2/11/2014.
 //  Copyright (c) 2014 Michael Hanna. All rights reserved.
 //
 
@@ -14,6 +14,6 @@ typedef NS_ENUM(NSUInteger, VieweControllerDisplayState)
     ViewControllerStackedBoxesState
 };
 
-@interface ViewController : UIViewController
+@interface ScrollingLayoutViewController : UIViewController
 @property (nonatomic) VieweControllerDisplayState displayState;
 @end

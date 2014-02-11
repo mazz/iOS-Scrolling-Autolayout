@@ -28,8 +28,8 @@
 		ADAC684A18A6E7EE009B9C91 /* UIView+FLKAutoLayoutPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAC684718A6E7EE009B9C91 /* UIView+FLKAutoLayoutPredicate.m */; };
 		ADAC684D18A6F6BF009B9C91 /* MyReallyBigImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAC684C18A6F6BF009B9C91 /* MyReallyBigImage.jpg */; };
 		ADAC684F18A6FCBD009B9C91 /* Boxes.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAC684E18A6FCBD009B9C91 /* Boxes.xib */; };
-		ADAC685418A839F0009B9C91 /* AppendLayoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAC685218A839F0009B9C91 /* AppendLayoutViewController.xib */; };
 		ADD109A518AA8700007A22A2 /* StackedLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */; };
+		ADD109A818AAA9D8007A22A2 /* ScrollingLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,11 +73,10 @@
 		ADAC684718A6E7EE009B9C91 /* UIView+FLKAutoLayoutPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FLKAutoLayoutPredicate.m"; sourceTree = "<group>"; };
 		ADAC684C18A6F6BF009B9C91 /* MyReallyBigImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MyReallyBigImage.jpg; sourceTree = "<group>"; };
 		ADAC684E18A6FCBD009B9C91 /* Boxes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Boxes.xib; sourceTree = "<group>"; };
-		ADAC685018A839F0009B9C91 /* AppendLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppendLayoutViewController.h; sourceTree = "<group>"; };
-		ADAC685118A839F0009B9C91 /* AppendLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppendLayoutViewController.m; sourceTree = "<group>"; };
-		ADAC685218A839F0009B9C91 /* AppendLayoutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppendLayoutViewController.xib; sourceTree = "<group>"; };
 		ADD109A318AA8700007A22A2 /* StackedLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackedLayoutViewController.h; sourceTree = "<group>"; };
 		ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackedLayoutViewController.m; sourceTree = "<group>"; };
+		ADD109A618AAA9D8007A22A2 /* ScrollingLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingLayoutViewController.h; sourceTree = "<group>"; };
+		ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingLayoutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,13 +138,12 @@
 			children = (
 				ADD109A318AA8700007A22A2 /* StackedLayoutViewController.h */,
 				ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */,
-				ADAC685018A839F0009B9C91 /* AppendLayoutViewController.h */,
-				ADAC685118A839F0009B9C91 /* AppendLayoutViewController.m */,
-				ADAC685218A839F0009B9C91 /* AppendLayoutViewController.xib */,
 				ADAC681618A6E758009B9C91 /* AppDelegate.h */,
 				ADAC681718A6E758009B9C91 /* AppDelegate.m */,
 				ADAC681918A6E758009B9C91 /* Main_iPhone.storyboard */,
 				ADAC681C18A6E758009B9C91 /* Main_iPad.storyboard */,
+				ADD109A618AAA9D8007A22A2 /* ScrollingLayoutViewController.h */,
+				ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */,
 				ADAC681F18A6E758009B9C91 /* ViewController.h */,
 				ADAC682018A6E758009B9C91 /* ViewController.m */,
 				ADAC683F18A6E7C4009B9C91 /* Util.h */,
@@ -280,7 +278,6 @@
 				ADAC681E18A6E758009B9C91 /* Main_iPad.storyboard in Resources */,
 				ADAC682318A6E758009B9C91 /* Images.xcassets in Resources */,
 				ADAC684D18A6F6BF009B9C91 /* MyReallyBigImage.jpg in Resources */,
-				ADAC685418A839F0009B9C91 /* AppendLayoutViewController.xib in Resources */,
 				ADAC684F18A6FCBD009B9C91 /* Boxes.xib in Resources */,
 				ADAC681B18A6E758009B9C91 /* Main_iPhone.storyboard in Resources */,
 				ADAC681218A6E758009B9C91 /* InfoPlist.strings in Resources */,
@@ -308,6 +305,7 @@
 				ADD109A518AA8700007A22A2 /* StackedLayoutViewController.m in Sources */,
 				ADAC681818A6E758009B9C91 /* AppDelegate.m in Sources */,
 				ADAC684818A6E7EE009B9C91 /* UIView+FLKAutoLayout.m in Sources */,
+				ADD109A818AAA9D8007A22A2 /* ScrollingLayoutViewController.m in Sources */,
 				ADAC681418A6E758009B9C91 /* main.m in Sources */,
 				ADAC684118A6E7C4009B9C91 /* Util.m in Sources */,
 			);
