@@ -22,7 +22,7 @@
         <!--Stacked Layout View Controller-->
         <scene sceneID="Rng-0Z-DZv">
             <objects>
-                <viewController storyboardIdentifier="StackedLayout" id="4bH-dg-FGZ" customClass="StackedLayoutViewController" sceneMemberID="viewController">
+                <viewController id="4bH-dg-FGZ" customClass="StackedLayoutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Thn-1b-04K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="610" y="181"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Layout Selection View Controller-->
         <scene sceneID="aj7-hB-U7p">
             <objects>
-                <tableViewController id="JUQ-Ug-X8u" sceneMemberID="viewController">
+                <tableViewController id="JUQ-Ug-X8u" customClass="LayoutSelectionViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gvw-OA-gi8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,9 +59,9 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="ZhN-g3-PkA"/>
                     <connections>
-                        <segue destination="EGh-aH-QRC" kind="push" id="Iz5-2x-IJW"/>
-                        <segue destination="4bH-dg-FGZ" kind="push" id="0pk-zu-dKK"/>
-                        <segue destination="SHG-cg-qfs" kind="push" id="d1r-q7-GbW"/>
+                        <segue destination="EGh-aH-QRC" kind="push" identifier="ScrollingLayout" id="Iz5-2x-IJW"/>
+                        <segue destination="4bH-dg-FGZ" kind="push" identifier="StackedLayout" id="0pk-zu-dKK"/>
+                        <segue destination="SHG-cg-qfs" kind="push" identifier="ScrollingGraphicLayout" id="d1r-q7-GbW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pT8-q3-SCP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -71,7 +71,7 @@
         <!--Scrolling Layout View Controller-->
         <scene sceneID="Abw-RL-wan">
             <objects>
-                <viewController storyboardIdentifier="ScrollingLayout" id="EGh-aH-QRC" customClass="ScrollingLayoutViewController" sceneMemberID="viewController">
+                <viewController id="EGh-aH-QRC" customClass="ScrollingLayoutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tCc-oZ-AvP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

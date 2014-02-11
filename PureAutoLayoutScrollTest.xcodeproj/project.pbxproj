@@ -29,6 +29,7 @@
 		ADD109A518AA8700007A22A2 /* StackedLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109A418AA8700007A22A2 /* StackedLayoutViewController.m */; };
 		ADD109A818AAA9D8007A22A2 /* ScrollingLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */; };
 		ADD109AB18AAB39F007A22A2 /* ScrollingGraphicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109AA18AAB39F007A22A2 /* ScrollingGraphicViewController.m */; };
+		ADD109AE18AAB7A4007A22A2 /* LayoutSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD109AD18AAB7A4007A22A2 /* LayoutSelectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		ADD109A718AAA9D8007A22A2 /* ScrollingLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingLayoutViewController.m; sourceTree = "<group>"; };
 		ADD109A918AAB39F007A22A2 /* ScrollingGraphicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingGraphicViewController.h; sourceTree = "<group>"; };
 		ADD109AA18AAB39F007A22A2 /* ScrollingGraphicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollingGraphicViewController.m; sourceTree = "<group>"; };
+		ADD109AC18AAB7A4007A22A2 /* LayoutSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LayoutSelectionViewController.h; sourceTree = "<group>"; };
+		ADD109AD18AAB7A4007A22A2 /* LayoutSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LayoutSelectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 				ADD109AA18AAB39F007A22A2 /* ScrollingGraphicViewController.m */,
 				ADAC683F18A6E7C4009B9C91 /* Util.h */,
 				ADAC684018A6E7C4009B9C91 /* Util.m */,
+				ADD109AC18AAB7A4007A22A2 /* LayoutSelectionViewController.h */,
+				ADD109AD18AAB7A4007A22A2 /* LayoutSelectionViewController.m */,
 				ADAC684B18A6E7F5009B9C91 /* FLKAutoLayout */,
 				ADAC682218A6E758009B9C91 /* Images.xcassets */,
 				ADAC680E18A6E758009B9C91 /* Supporting Files */,
@@ -302,6 +307,7 @@
 				ADAC681818A6E758009B9C91 /* AppDelegate.m in Sources */,
 				ADAC684818A6E7EE009B9C91 /* UIView+FLKAutoLayout.m in Sources */,
 				ADD109A818AAA9D8007A22A2 /* ScrollingLayoutViewController.m in Sources */,
+				ADD109AE18AAB7A4007A22A2 /* LayoutSelectionViewController.m in Sources */,
 				ADAC681418A6E758009B9C91 /* main.m in Sources */,
 				ADAC684118A6E7C4009B9C91 /* Util.m in Sources */,
 			);

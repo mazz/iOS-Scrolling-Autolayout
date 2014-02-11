@@ -28,6 +28,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     self.containerView = [[UIView alloc] init];
     [self.view addSubview:self.containerView];
     

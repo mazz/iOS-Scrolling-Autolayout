@@ -63,7 +63,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
     self.containerView = [[UIView alloc] init];
     [self.view addSubview:self.containerView];
     
