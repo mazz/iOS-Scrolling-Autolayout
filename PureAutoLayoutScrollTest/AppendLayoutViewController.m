@@ -39,25 +39,25 @@
     
     UIView *viewBox = [[UIView alloc] init];
     viewBox.translatesAutoresizingMaskIntoConstraints = NO;
-
-    [self.containerView addSubview:viewBox];
-    [viewBox alignTop:@"10" leading:@"20" bottom:@"-30" trailing:@"-20" toView:self.containerView];
-
-//    [viewBox alignLeading:@"0" trailing:@"0" toView:self.containerView];
-//    [viewBox alignTop:@"65" bottom:@"-44" toView:self.containerView];
-
+    
     self.box0.translatesAutoresizingMaskIntoConstraints = NO;
     self.box1.translatesAutoresizingMaskIntoConstraints = NO;
     self.box2.translatesAutoresizingMaskIntoConstraints = NO;
 
+    [self.containerView addSubview:viewBox];
+    [viewBox alignTop:@"0" leading:@"0" toView:self.containerView];
+    [viewBox alignTrailingEdgeWithView:self.containerView predicate:@"0"];
+
+//    [viewBox alignTop:@"10" leading:@"20" bottom:@"-30" trailing:@"-20" toView:self.containerView];
+
+    NSArray *boxes = @[self.box0, self.box1, self.box2];
+    
     [viewBox addSubview:self.box0];
     [viewBox addSubview:self.box1];
     [viewBox addSubview:self.box2];
     
-    NSArray *boxes = @[self.box0, self.box1, self.box2];
-    
-    //[boxes[0] constrainWidth:@">=320" height:@">=263"];
-    [boxes[0] constrainHeight:@">=263"];
+    [boxes[0] constrainWidth:@">=320" height:@">=263"];
+    //[boxes[0] constrainHeight:@">=21"];
     [boxes[0] alignLeading:@"0" trailing:@"0" toView:viewBox];
 //    [boxes[0] constrainWidthToView:self.containerView predicate:@"0"]; NG
     [UIView alignTopEdgesOfViews:@[boxes[0], viewBox]];
@@ -70,7 +70,14 @@
     [UIView spaceOutViewsVertically:boxes predicate:@"0"];
 //    [UIView distributeCenterYOfViews:boxes inView:viewBox]; NG
 
-    [UIView colorViewsRandomly:self.view];
+    [UIView alignBottomEdgesOfViews:@[viewBox, boxes[2]]];
+    [UIView colorViewsRandomly:viewBox];
+    [UIView logViewRect:self.view level:0];
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
     [UIView logViewRect:self.view level:0];
 }
 
