@@ -53,10 +53,6 @@
     [self.box2 addSubview:label2];
     [self.box2 setBackgroundColor:[UIColor blueColor]];
     
-    [view addSubview:self.box0];
-    [view addSubview:self.box1];
-    [view addSubview:self.box2];
-    
     view.backgroundColor = [UIColor whiteColor];
     self.view = view;
 }
